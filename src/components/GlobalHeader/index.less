@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  color: #71777c;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin: 0 auto;
+    width: @content-width;
+  }
+  &-logo {
+    color: @primary-color;
+    font-size: 28px;
+    display: inline-block;
+    line-height: 28px;
+    margin-right: 30px;
+  }
+  a {
+    color: #71777c;
+  }
+  a:hover {
+    color: @primary-color;
+  }
+  &-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    &.active {
+      color: @primary-color;
+    }
+  }
+}
