@@ -15,17 +15,17 @@ const HomeList: FC = (props: RouteProps) => {
    */
   const handleSearch = (value: string) => {
     if (!value) return;
-    history.push(`/search/${value}`)
+    history.push(`/index/search/${value}`)
   }
 
   const pathname = props.location?.pathname;
   const navItems = [
     {
-      path: '/',
+      path: '/index',
       name: '主页'
     },
     {
-      path: '/category',
+      path: '/index/category',
       name: '分类'
     }
   ]
@@ -51,10 +51,10 @@ const HomeList: FC = (props: RouteProps) => {
               onSearch={handleSearch}
               style={{ width: 240, marginRight: 20 }}
             />
-            <NavLink to="/">
+            <NavLink to="/register">
               <div className="header-item">注册</div>
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/login">
               <div className="header-item">登录</div>
             </NavLink>
           </div>
